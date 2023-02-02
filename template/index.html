@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Bootstrap.">  
+    <title>Planner Table</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>  
+    <center><h1>Planner Table</h1></center>
+    <div class="container">
+      <div class="table-responsive">
+        {% for user in users %}
+            {{titles[loop.index]}}
+            {{ user|safe }}
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+  <script>
+  $(document).ready(function(){
+      $('#dataframe').dataTable();
+  });
+  </script>
+</html>
