@@ -49,20 +49,30 @@ in `planning.json`, which contains around 10k records.
 * Optional Skills: array of key-value pair (optional)
 * Is Unassigned: boolean
 
-## Preferred Tech Stack
+## Used Tech Stack
 
 * Python 3.8+
-* FastAPI
-* SQLAlchemy
+* Flask
+* Bootstrap
 
-## Submission
+## Additional details
 
-* Please fork the project, commit and push your implementation and add
-  `sundara.amancharla@aspaara.com` as a contributor.
-* Please update the README with any additional details or steps that are
-  required to run your implementation.
-* We understand that there is a limited amount of time, so it does not have to
-  be perfect or 100% finished. Plan to spend no more than 2-3 hours on it.
+* Use `Shift` + `Enter` to each cell in notebook
+* After Running last cell go to `http://127.0.0.1:5000` 
+* Wait till the page loads
+* Implemented Features:
+	1. pagination (option to select entries per and current page)
+    2. sorting (option to sort each columns)
+    3. filtering / searching (option to search/filter)
 
-For any additional questions on the task please feel free to email
-`sundara.amancharla@aspaara.com`.
+## Additional details
+
+* Forked the project, Made changes, pushed it into Git and added `sundara.amancharla@aspaara.com` as a contributor.
+* All the codes are present in main.ipynb file.
+* Structure of main.ipynb
+    * Database creation `planner.db`
+    * Display of Database description
+    * Database updation using `planning.json`
+    * Creation a simple backend application using `Flask` and `Bootstrap` that provides an API for a dashboard which
+	  allows a planner to get insights into client and planning information.
+	* Time taken for completion `4 hours`
