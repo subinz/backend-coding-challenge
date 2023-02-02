@@ -75,4 +75,4 @@ in `planning.json`, which contains around 10k records.
     * Database updation using `planning.json`
     * Creation a simple backend application using `Flask` and `Bootstrap` that provides an API for a dashboard which
 	  allows a planner to get insights into client and planning information.
-	* Time taken for completion `4 hours`
+* Time taken for completion `4 hours`
